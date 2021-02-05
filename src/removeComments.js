@@ -15,7 +15,7 @@ async function removeAllComments() {
   let userIdentity = await getUserIdentity();
   let commentList = await getUserCommentList(userIdentity);
   let iteration = 0; //for debug/testing
-  while (commentList.length >= 1 && iteration <= 1) {
+  while (commentList.length >= 1) {
     console.log("Got " + commentList.length + " comments");
     iteration++;
     await removeThings(commentList, userIdentity);

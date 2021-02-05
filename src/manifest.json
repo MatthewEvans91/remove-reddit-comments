@@ -1,0 +1,20 @@
+{
+  "name": "Remove Reddit Comments",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This plugin will remove all of your reddit comments. Navigate to https://www.reddit.com, log in, and start!",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Remove Reddit Comments",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "https://*/*",
+    "tabs"
+  ]
+}
